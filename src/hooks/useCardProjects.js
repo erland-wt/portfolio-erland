@@ -1,10 +1,22 @@
 import { useMemo, useState } from "react";
 import nusantaraXray from "../../public/images/mockup-desktop-nusantaraXray.png";
 import canvasandcode from "../../public/images/mockup-desktop-canvasandcode.png";
+import sentimentAnalysis from "../../public/images/mockup-desktop-sentiment-analysis-platform.png";
 
 export const PROJECTS = [
   {
     id: 1,
+    title: "Sentiment Analysis Platform",
+    description:
+      "A web application that analyzes user reviews and feedback to determine the overall sentiment (positive, negative, neutral) using natural language processing techniques.",
+    image: sentimentAnalysis,
+    alt: "Sentiment Analysis Platform Mockup",
+    techStack: ["React", "Tailwind CSS"],
+    href: "https://sentiment-analysis-platform.vercel.app",
+    status: "live",
+  },
+  {
+    id: 2,
     title: "Nusantara Xray",
     description:
       "Company profile website for Nusantara Xray, a leading provider of advanced X-ray inspection solutions in Indonesia.",
@@ -15,7 +27,7 @@ export const PROJECTS = [
     status: "live",
   },
   {
-    id: 2,
+    id: 3,
     title: "Canvas and Code",
     description:
       "A portfolio website template designed for developers and designers to showcase their work with a clean and modern aesthetic.",
@@ -26,7 +38,7 @@ export const PROJECTS = [
     status: "live",
   },
   {
-    id: 3,
+    id: 4,
     title: "More projects coming soon",
     description:
       "Currently working on new projects to expand my portfolio. Stay tuned for upcoming updates and releases.",
