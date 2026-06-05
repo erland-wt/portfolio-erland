@@ -17,19 +17,15 @@ type SkillItem = {
 };
 
 interface SkillsColumnProps {
-  title: string;
   skills: SkillItem[];
 }
 
-const SkillsColumn: React.FC<SkillsColumnProps> = ({ title, skills }) => (
+const SkillsColumn: React.FC<SkillsColumnProps> = ({ skills }) => (
   <motion.div
     variants={cardVariants as any}
     whileHover={{ y: -4 }}
     className="rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-5 sm:p-6 shadow-lg"
   >
-    <h3 className="text-base sm:text-lg font-semibold text-white mb-4">
-      {title}
-    </h3>
     <div className="space-y-4">
       {skills.map((skill, index) => (
         <motion.div
@@ -92,14 +88,14 @@ export default function Skills() {
             Skills
           </p>
           <h1 className="mt-1 text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-            My skills in frontend development & design tools
+            My skills in development & design tools
           </h1>
           <span className="mt-4 block h-1 w-32 sm:w-44 md:w-56 rounded-full bg-white/80 mx-auto" />
         </header>
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2">
-          <SkillsColumn title="Frontend & Markup" skills={leftColumnSkills} />
-          <SkillsColumn title="Frameworks & Tools" skills={rightColumnSkills} />
+          <SkillsColumn skills={leftColumnSkills} />
+          <SkillsColumn skills={rightColumnSkills} />
         </div>
       </div>
     </motion.section>

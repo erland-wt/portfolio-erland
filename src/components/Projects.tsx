@@ -67,7 +67,7 @@ interface Project {
   id: number;
   title: string;
   description: string;
-  image?: any;
+  image?: string;
   alt?: string;
   techStack: string[];
   href?: string;

@@ -6,15 +6,19 @@ import ReactIcon from "../../public/icons/react.png";
 import NextJS from "../../public/icons/nextjs.svg";
 import Tailwind from "../../public/icons/tailwind.png";
 import Figma from "../../public/icons/figma.svg";
+import Python from "../../public/icons/python.png";
+import PostgreSQL from "../../public/icons/postgresql.png";
 
 export const SKILLS = [
   { name: "HTML", level: 90, icon: HTML },
   { name: "CSS", level: 90, icon: CSS },
-  { name: "JavaScript", level: 50, icon: JavaScript },
-  { name: "React", level: 30, icon: ReactIcon },
-  { name: "Next.js", level: 20, icon: NextJS },
-  { name: "Tailwind CSS", level: 40, icon: Tailwind },
-  { name: "Figma", level: 30, icon: Figma },
+  { name: "JavaScript", level: 70, icon: JavaScript },
+  { name: "Python", level: 70, icon: Python },
+  { name: "React", level: 45, icon: ReactIcon },
+  { name: "Next.js", level: 40, icon: NextJS },
+  { name: "Tailwind CSS", level: 60, icon: Tailwind },
+  { name: "Figma", level: 50, icon: Figma },
+  { name: "PostgreSQL", level: 50, icon: PostgreSQL },
 ];
 
 export const sectionVariants = {
