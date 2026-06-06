@@ -11,7 +11,7 @@ export const PROJECTS = [
       "A web application that analyzes user reviews and feedback to determine the overall sentiment (positive, negative, neutral) using natural language processing techniques.",
     image: sentimentAnalysis,
     alt: "Sentiment Analysis Platform Mockup",
-    techStack: ["React", "Tailwind CSS"],
+    techStack: ["React", "Tailwind CSS", "Python", "FastAPI", "Typescript", "Scikit-learn"],
     href: "https://sentiment-analysis-platform.vercel.app",
     status: "live",
   },
